@@ -6,12 +6,14 @@
     <mat-sidenav #sidenav mode="push">
         
         <mat-toolbar>
-            
+            <span>Menú</span>
+
+            <span class="spacer"></span>
+
             <button mat-icon-button
                 (click)="sidenav.toggle()">
                 <mat-icon >menu</mat-icon>
             </button>
-            <span>Menú</span>
         </mat-toolbar>
 
         <mat-nav-list>
@@ -45,7 +47,16 @@
             (click)="sidenav.toggle()">
             <mat-icon >menu</mat-icon>
         </button>
+
+        <span class="spacer"></span>
+
+        <button mat-button>
+            Logout
+        </button>
+
     </mat-toolbar>
+
+
     <div class="container">
         <router-outlet></router-outlet>
     </div>
